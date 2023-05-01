@@ -8,4 +8,6 @@ class SimuladorDedado:
         self.mensagem = 'Você gostaria de Girar o Dado ?'
     
 def Iniciar(self):
-    input(self.mensagem)
+    resposta = input(self.mensagem)
+    if resposta == 'sim':
+        self.ValorValorDoDado()
