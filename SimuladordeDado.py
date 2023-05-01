@@ -9,8 +9,11 @@ class SimuladorDedado:
     
     def Iniciar(self):
         resposta = input(self.mensagem)
-        if resposta == 'sim':
+        if resposta == 'sim' or resposta == 's':
             self.GerarValorDoDado()
+        elif resposta == 'não' or resposta == 'n':
+        else:
+            print('Favor Digitar sim ou não')
 
     def GerarValorDoDado(self):
         print(random.randint(self.valor_minimo, self.valor_maximo)) #Escolhe um valor aleatório entre ovalor minimo e maximo
