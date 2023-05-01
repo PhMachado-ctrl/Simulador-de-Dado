@@ -7,7 +7,10 @@ class SimuladorDedado:
         self.valor_maximo = 6
         self.mensagem = 'Você gostaria de Girar o Dado ?'
     
-def Iniciar(self):
-    resposta = input(self.mensagem)
-    if resposta == 'sim':
-        self.ValorValorDoDado()
+    def Iniciar(self):
+        resposta = input(self.mensagem)
+        if resposta == 'sim':
+            self.GerarValorDoDado()
+
+    def GerarValorDoDado(self):
+        print(random.randint(self.valor_minimo, self.valor_maximo))
