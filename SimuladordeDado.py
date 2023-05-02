@@ -1,6 +1,6 @@
 #Simulador de Dado
 import random #Bibloteca que gera valores aleatorios
-import PySimplGUI #Bliblioyeca de tela e interface
+import PySimpleGUI as sg #Bliblioyeca de tela e interface
 
 class SimuladorDedado:
     def __init__(self) -> None: #Objeto da Classe simulador de dado
@@ -8,8 +8,12 @@ class SimuladorDedado:
         self.valor_maximo = 6
         self.mensagem = 'Você gostaria de Girar o Dado ? \n'
         # Layout
-       
+        layout = [
+            [sg.Text("Jogar um Dado?")]
+            [sg.Button("sim"), sg.Button("não")]
+        ]
         # criar uma janela
+       # janela = 
         # ler os valores da tela
         # fazer alguma coisa com esses valores
 
