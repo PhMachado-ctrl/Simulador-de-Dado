@@ -13,7 +13,7 @@ class SimuladorDedado:
             [sg.Button("sim"), sg.Button("não")]
         ]
         # criar uma janela
-       # janela = 
+        janela = sg.Window('Simulador de Dado', layout=layout)
         # ler os valores da tela
         # fazer alguma coisa com esses valores
 
